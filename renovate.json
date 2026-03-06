@@ -5,6 +5,13 @@
   ],
   "packageRules": [
     {
+      "description": "LinuxServer images use version-X.X.X format",
+      "versioning": "regex:^(?<compatibility>version)-v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*",
+      "matchPackageNames": [
+        "/linuxserver/"
+      ]
+    },
+    {
       "groupName": "Mend: All Minor and Patch Releases",
       "matchUpdateTypes": [
         "minor",
