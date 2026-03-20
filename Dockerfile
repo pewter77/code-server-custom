@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/code-server:version-4.111.0
+FROM ghcr.io/linuxserver/code-server:version-4.112.0
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
