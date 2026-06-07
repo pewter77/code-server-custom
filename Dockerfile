@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSLo /usr/local/bin/sops \
-        https://github.com/getsops/sops/releases/download/v3.9.4/sops-v3.9.4.linux.amd64 && \
+        https://github.com/getsops/sops/releases/download/v3.13.1/sops-v3.13.1.linux.amd64 && \
     chmod +x /usr/local/bin/sops
 
 RUN pip3 install --break-system-packages \
